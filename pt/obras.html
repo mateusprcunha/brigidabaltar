@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Brígida Baltar">
+    <meta name="description" content="Eu não pensava em fazer filmes, queria mesmo era cavar buracos na parede, plantar em tijolos, enterrar coisas, colher algumas substâncias… mas eram atos e lugares tão particulares que precisei de uma câmera para registrar.">
+    <title>Brígida Baltar</title>
+    <link rel="icon" type="image/png" href="../_src/favicon.png">
+    <link rel="stylesheet" href="../_css/theme.css">
+    <link rel="stylesheet" href="../_css/menu.css">
+    <link rel="stylesheet" href="../_css/content.css">
+
+    <style>
+        nav ul li:last-of-type {
+            font-style: italic;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        section h1 {
+            border-top: 1px solid var(--inverse-color);
+        }
+
+        section ul {
+            text-align: center;
+            max-width: none;
+            padding: 0;
+        }
+
+        section ul li a {
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        em {
+            font-size: var(--tiny-text-size);
+        }
+
+        time {
+            font-size: var(--small-text-size);
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        button {
+            cursor: pointer;
+        }
+
+        @media (max-width: 767px) {
+
+            section {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+
+    </style>
+
+    <script src="../_js/script.js"></script>
+</head>
+
+<body onresize="updateWindow()">
+    <header>
+        <h1 id="logo"><a href="home.html">Brígida Baltar</a></h1>
+        <input type="checkbox" id="open-menu">
+        <label for="open-menu" id="toggle">
+            <div id="spinner-top"></div>
+            <div id="spinner-center"></div>
+            <div id="spinner-bottom"></div>
+        </label>
+        <nav>
+            <ul>
+                <li>
+                    <a>Obras</a>
+                    <ul>
+                        <li>
+                            <a href="#">Ações na casa</a>
+                        </li>
+                        <li>
+                            <a href="#">Ações na natureza</a>
+                        </li>
+                        <li>
+                            <a href="#">Ações na Primeiras esculturas de vidro e cerâmica</a>
+                        </li>
+                        <li>
+                            <a href="#">Desenhos &#38 esculturas a partir do tijolo da casa</a>
+                        </li>
+                        <li>
+                            <a href="#">Entre o real e a fábula</a>
+                        </li>
+                        <li>
+                            <a href="#">Voar</a>
+                        </li>
+                        <li>
+                            <a href="#">Corpo, pele, irmãos</a>
+                        </li>
+                        <li>
+                            <a href="#">A carne do mar</a>
+                        </li>
+                        <li>
+                            <a href="#">filmes</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="textos-e-livros.html">Textos &#38 Livros</a>
+                </li>
+                <li>
+                    <a href="biografia.html">Biografia</a>
+                </li>
+                <li>
+                    <a href="exposicoes.html">Exposições</a>
+                </li>
+                <li>
+                    <a class="collapse"><img src="../_src/mail.svg" height="15" alt="Contato"></a>
+                    <address>
+                        <ul>
+                            <li>
+                                <h1>Brígida Baltar</h1>
+                                <p>baltar.brigida@gmail.com</p>
+                            </li>
+                            <li>
+                                <h1>Galeria Nara Roesler</h1>
+                                <p>info@naraoesler.art</p>
+                            </li>
+                            <li>
+                                <h2>São Paulo</h2>
+                                <p>Avenida Europa 655</p>
+                                <p>Jd. Europa 01449 001</p>
+                                <p>São Paulo SP Brasil</p>
+                                <p>55 (11) 2039 5454</p>
+                            </li>
+                            <li>
+                                <h2>Rio de Janeiro</h2>
+                                <p>Rua Redentor 241</p>
+                                <p>Ipanema 22421 030</p>
+                                <p>Rio de Janeiro RJ Brasil</p>
+                                <p>55 (21) 3591 0052</p>
+                            </li>
+                            <li>
+                                <h2>New York</h2>
+                                <p>22 East 69th Street 3R</p>
+                                <p>New York NY 10021 USA</p>
+                                <p>1 (212) 794 5038</p>
+                                <p>info@naraoesler.art</p>
+                            </li>
+                        </ul>
+                    </address>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <cite>
+            <p>"Eu não pensava em fazer filmes, queria mesmo era cavar buracos na parede, plantar em tijolos, enterrar coisas, colher algumas substâncias… mas eram atos e lugares tão particulares que precisei de uma câmera para registrar"</p>
+        </cite>
+
+        <section>
+            <h1>Ações na casa</h1>
+            <ul>
+                <li id="nome-da-obra">
+                    <a class="collapse">Um sopro <time><span>(1986)</span></time></a>
+                    <div class="content-cell">
+                        <h2>Musas</h2>
+                        <div class="carousel-content">
+                            <figure>
+                                <div class="carousel">
+                                    <img src="../_src/obras/01.jpg">
+                                </div>
+                                <button onclick="showGallery(this)">Ver Galeria</button>
+
+                                <figcaption>
+                                    <time><span>(1994)</span></time>
+                                    <p><span>Vidro, tijolo &#38 água</span></p>
+                                </figcaption>
+
+                                <figcaption>
+                                    <p>Construção de uma torre com tijolos retirados da casa ateliê.</p>
+                                    <p>Espaço estrutura como extensão do corpo</p>
+                                </figcaption>
+
+                            </figure>
+                        </div>
+
+                        <div class="gallery-content hidden">
+                            <figure>
+                                <ul class="gallery">
+                                    <li>
+                                        <img src="../_src/obras/01.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/02.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/03.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/04.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/05.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/06.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/07.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/08.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/09.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/10.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/11.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/12.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/13.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/14.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/15.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/16.jpg">
+                                    </li>
+                                </ul>
+                            </figure>
+                        </div>
+                        
+                        <a class="back hidden" onclick="hideGallery(this)">Voltar</a>
+                        <a class="close" onclick="closeContent(this)">Fechar</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="collapse">Enterrar é plantar <time><span>(1994)</span></time></a>
+                    <div class="content-cell">
+                        <h2>Musas</h2>
+                        <div class="carousel-content">
+                            <figure>
+                                <div class="carousel">
+                                    <img src="../_src/obras/01.jpg">
+                                </div>
+                                <button onclick="showGallery(this)">Ver Galeria</button>
+
+                                <figcaption>
+                                    <time><span>(1994)</span></time>
+                                    <p><span>Vidro, tijolo &#38 água</span></p>
+                                </figcaption>
+
+                                <figcaption>
+                                    <p>Construção de uma torre com tijolos retirados da casa ateliê.</p>
+                                    <p>Espaço estrutura como extensão do corpo</p>
+                                </figcaption>
+
+                            </figure>
+                        </div>
+
+                        <div class="gallery-content hidden">
+                            <figure>
+                                <ul class="gallery">
+                                    <li>
+                                        <img src="../_src/obras/01.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/02.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/03.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/04.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/05.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/06.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/07.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/08.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/09.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/10.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/11.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/12.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/13.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/14.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/15.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/16.jpg">
+                                    </li>
+                                </ul>
+                            </figure>
+                        </div>
+                        
+                        <a class="back hidden" onclick="hideGallery(this)">Voltar</a>
+                        <a class="close" onclick="closeContent(this)">Fechar</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="collapse">Despercebida <time><span>(1995)</span></time></a>
+                    <div class="content-cell">
+                        <h2>Musas</h2>
+                        <div class="carousel-content">
+                            <figure>
+                                <div class="carousel">
+                                    <img src="../_src/obras/01.jpg">
+                                </div>
+                                <button onclick="showGallery(this)">Ver Galeria</button>
+
+                                <figcaption>
+                                    <time><span>(1994)</span></time>
+                                    <p><span>Vidro, tijolo &#38 água</span></p>
+                                </figcaption>
+
+                                <figcaption>
+                                    <p>Construção de uma torre com tijolos retirados da casa ateliê.</p>
+                                    <p>Espaço estrutura como extensão do corpo</p>
+                                </figcaption>
+
+                            </figure>
+                        </div>
+
+                        <div class="gallery-content hidden">
+                            <figure>
+                                <ul class="gallery">
+                                    <li>
+                                        <img src="../_src/obras/01.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/02.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/03.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/04.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/05.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/06.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/07.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/08.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/09.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/10.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/11.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/12.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/13.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/14.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/15.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/16.jpg">
+                                    </li>
+                                </ul>
+                            </figure>
+                        </div>
+                        
+                        <a class="back hidden" onclick="hideGallery(this)">Voltar</a>
+                        <a class="close" onclick="closeContent(this)">Fechar</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="collapse">Abrigo <time><span>(1996)</span></time></a>
+                    <div class="content-cell">
+                        <h2>Musas</h2>
+                        <div class="carousel-content">
+                            <figure>
+                                <div class="carousel">
+                                    <img src="../_src/obras/01.jpg">
+                                </div>
+                                <button onclick="showGallery(this)">Ver Galeria</button>
+
+                                <figcaption>
+                                    <time><span>(1994)</span></time>
+                                    <p><span>Vidro, tijolo &#38 água</span></p>
+                                </figcaption>
+
+                                <figcaption>
+                                    <p>Construção de uma torre com tijolos retirados da casa ateliê.</p>
+                                    <p>Espaço estrutura como extensão do corpo</p>
+                                </figcaption>
+
+                            </figure>
+                        </div>
+
+                        <div class="gallery-content hidden">
+                            <figure>
+                                <ul class="gallery">
+                                    <li>
+                                        <img src="../_src/obras/01.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/02.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/03.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/04.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/05.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/06.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/07.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/08.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/09.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/10.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/11.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/12.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/13.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/14.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/15.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/16.jpg">
+                                    </li>
+                                </ul>
+                            </figure>
+                        </div>
+                        
+                        <a class="back hidden" onclick="hideGallery(this)">Voltar</a>
+                        <a class="close" onclick="closeContent(this)">Fechar</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="collapse">Abrindo a janela <time><span>(1996)</span></time></a>
+                    <div class="content-cell">
+                        <h2>Musas</h2>
+                        <div class="carousel-content">
+                            <figure>
+                                <div class="carousel">
+                                    <img src="../_src/obras/01.jpg">
+                                </div>
+                                <button onclick="showGallery(this)">Ver Galeria</button>
+
+                                <figcaption>
+                                    <time><span>(1994)</span></time>
+                                    <p><span>Vidro, tijolo &#38 água</span></p>
+                                </figcaption>
+
+                                <figcaption>
+                                    <p>Construção de uma torre com tijolos retirados da casa ateliê.</p>
+                                    <p>Espaço estrutura como extensão do corpo</p>
+                                </figcaption>
+
+                            </figure>
+                        </div>
+
+                        <div class="gallery-content hidden">
+                            <figure>
+                                <ul class="gallery">
+                                    <li>
+                                        <img src="../_src/obras/01.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/02.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/03.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/04.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/05.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/06.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/07.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/08.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/09.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/10.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/11.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/12.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/13.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/14.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/15.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/16.jpg">
+                                    </li>
+                                </ul>
+                            </figure>
+                        </div>
+                        
+                        <a class="back hidden" onclick="hideGallery(this)">Voltar</a>
+                        <a class="close" onclick="closeContent(this)">Fechar</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="collapse">A coleta da neblina <time><span>(1996)</span></time></a>
+                    <div class="content-cell">
+                        <h2>Musas</h2>
+                        <div class="carousel-content">
+                            <figure>
+                                <div class="carousel">
+                                    <img src="../_src/obras/01.jpg">
+                                </div>
+                                <button onclick="showGallery(this)">Ver Galeria</button>
+
+                                <figcaption>
+                                    <time><span>(1994)</span></time>
+                                    <p><span>Vidro, tijolo &#38 água</span></p>
+                                </figcaption>
+
+                                <figcaption>
+                                    <p>Construção de uma torre com tijolos retirados da casa ateliê.</p>
+                                    <p>Espaço estrutura como extensão do corpo</p>
+                                </figcaption>
+
+                            </figure>
+                        </div>
+
+                        <div class="gallery-content hidden">
+                            <figure>
+                                <ul class="gallery">
+                                    <li>
+                                        <img src="../_src/obras/01.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/02.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/03.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/04.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/05.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/06.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/07.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/08.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/09.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/10.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/11.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/12.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/13.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/14.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/15.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="../_src/obras/16.jpg">
+                                    </li>
+                                </ul>
+                            </figure>
+                        </div>
+                        
+                        <a class="back hidden" onclick="hideGallery(this)">Voltar</a>
+                        <a class="close" onclick="closeContent(this)">Fechar</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h1>Filmes</h1>
+            <ul>
+                <li>
+                    <a class="collapse">Abrindo a janela <time><span>(1996)</span></time></a>
+                    <div class="content-cell">
+                        <h2>A pergunta de Simone</h2>
+                        <div class="video-content">
+                            <figure>
+                                <video autoplay muted loop>
+                                    <source src="../_src/filmes/video.mp4" type="video/mp4">
+                                </video>
+
+                                <figcaption>
+                                    <time><span>(1996)</span></time>
+                                    <p><span>VHS transferido para SD;</span></p>
+                                    <p><span>p&#38b; sem áudio</span></p>
+                                    <p><span>3'03"</span></p>
+                                </figcaption>
+
+                                <figcaption>
+                                    <p>Construção de uma torre com tijolos retirados da casa ateliê.</p>
+                                    <p>Espaço estrutura como extensão do corpo</p>
+                                </figcaption>
+
+                                <figcaption>
+                                    <p><span><em>Câmera</em></span></p>
+                                    <p>João Galhardot</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <a class="close" onclick="closeContent(this)">Fechar</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="collapse">A coleta da neblina <time><span>(1996)</span></time></a>
+                    <div class="content-cell">
+                        <h2>A pergunta de Simone</h2>
+                        <div class="video-content">
+                            <figure>
+                                <video autoplay muted loop>
+                                    <source src="../_src/filmes/video.mp4" type="video/mp4">
+                                </video>
+
+                                <figcaption>
+                                    <time><span>(1996)</span></time>
+                                    <p><span>VHS transferido para SD;</span></p>
+                                    <p><span>p&#38b; sem áudio</span></p>
+                                    <p><span>3'03"</span></p>
+                                </figcaption>
+
+                                <figcaption>
+                                    <p>Construção de uma torre com tijolos retirados da casa ateliê.</p>
+                                    <p>Espaço estrutura como extensão do corpo</p>
+                                </figcaption>
+
+                                <figcaption>
+                                    <p><span><em>Câmera</em></span></p>
+                                    <p>João Galhardot</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <a class="close" onclick="closeContent(this)">Fechar</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="collapse">Coletas <time><span>(1998-2005)</span></time></a>
+                    <div class="content-cell">
+                        <h2>A pergunta de Simone</h2>
+                        <div class="video-content">
+                            <figure>
+                                <video autoplay muted loop>
+                                    <source src="../_src/filmes/video.mp4" type="video/mp4">
+                                </video>
+
+                                <figcaption>
+                                    <time><span>(1996)</span></time>
+                                    <p><span>VHS transferido para SD;</span></p>
+                                    <p><span>p&#38b; sem áudio</span></p>
+                                    <p><span>3'03"</span></p>
+                                </figcaption>
+
+                                <figcaption>
+                                    <p>Construção de uma torre com tijolos retirados da casa ateliê.</p>
+                                    <p>Espaço estrutura como extensão do corpo</p>
+                                </figcaption>
+
+                                <figcaption>
+                                    <p><span><em>Câmera</em></span></p>
+                                    <p>João Galhardot</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <a class="close" onclick="closeContent(this)">Fechar</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="collapse">A coleta da neblina <time><span>(1999/2019)</span></time></a>
+                    <div class="content-cell">
+                        <h2>A pergunta de Simone</h2>
+                        <div class="video-content">
+                            <figure>
+                                <video autoplay muted loop>
+                                    <source src="../_src/filmes/video.mp4" type="video/mp4">
+                                </video>
+
+                                <figcaption>
+                                    <time><span>(1996)</span></time>
+                                    <p><span>VHS transferido para SD;</span></p>
+                                    <p><span>p&#38b; sem áudio</span></p>
+                                    <p><span>3'03"</span></p>
+                                </figcaption>
+
+                                <figcaption>
+                                    <p>Construção de uma torre com tijolos retirados da casa ateliê.</p>
+                                    <p>Espaço estrutura como extensão do corpo</p>
+                                </figcaption>
+
+                                <figcaption>
+                                    <p><span><em>Câmera</em></span></p>
+                                    <p>João Galhardot</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <a class="close" onclick="closeContent(this)">Fechar</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="collapse">A noite no aeroporto <time><span>(2000)</span></time></a>
+                    <div class="content-cell">
+                        <h2>A pergunta de Simone</h2>
+                        <div class="video-content">
+                            <figure>
+                                <video autoplay muted loop>
+                                    <source src="../_src/filmes/video.mp4" type="video/mp4">
+                                </video>
+
+                                <figcaption>
+                                    <time><span>(1996)</span></time>
+                                    <p><span>VHS transferido para SD;</span></p>
+                                    <p><span>p&#38b; sem áudio</span></p>
+                                    <p><span>3'03"</span></p>
+                                </figcaption>
+
+                                <figcaption>
+                                    <p>Construção de uma torre com tijolos retirados da casa ateliê.</p>
+                                    <p>Espaço estrutura como extensão do corpo</p>
+                                </figcaption>
+
+                                <figcaption>
+                                    <p><span><em>Câmera</em></span></p>
+                                    <p>João Galhardot</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <a class="close" onclick="closeContent(this)">Fechar</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <small>
+            <ul>
+                <li>Desenvolvimento <a href="#">Mateus Cunha</a></li>
+                <li>Design <a href="#">Lucas Bevilaqua</a></li>
+            </ul>
+        </small>
+    </footer>
+
+    <script>
+        setPage();
+    </script>
+</body>
+
+</html>

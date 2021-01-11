@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Brígida Baltar">
+    <meta name="description" content="Eu não pensava em fazer filmes, queria mesmo era cavar buracos na parede, plantar em tijolos, enterrar coisas, colher algumas substâncias… mas eram atos e lugares tão particulares que precisei de uma câmera para registrar.">
+    <title>Brígida Baltar</title>
+    <link rel="icon" type="image/png" href="../_src/favicon.png">
+    <link rel="stylesheet" href="../_css/theme.css">
+    <link rel="stylesheet" href="../_css/menu.css">
+
+    <style>
+        section {
+            padding: 20px 0;
+        }
+
+        section h1 {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        section ol {
+            max-width: none;
+            width: 100%;
+        }
+
+        section ol li {
+            margin-left: 15px;
+            margin-right: 15px;
+            box-sizing: border-box;
+        }
+
+        section ol li time {
+            display: inline-block;
+            width: 50px;
+            text-align: right;
+        }
+
+        section ol li div {
+            display: inline-block;
+            width: calc(95% - 55px);
+            vertical-align: top;
+            padding-left: 10px;
+        }
+
+        @media (min-width: 768px) {
+
+            section h1 {
+                margin-left: 40px;
+                margin-right: 40px;
+            }
+
+            section ol li {
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            
+            section h1 {
+                margin-bottom: 0;    
+            }
+            
+            section ol {
+                padding-top: 30px;
+            }
+            
+            section ol li {
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            
+            #individuais {
+                box-sizing: border-box;
+                width: 50%;
+                float: left;
+            }
+            
+            #individuais h1 {
+                margin-right: 0;
+            }
+            
+            #coletivas {
+                box-sizing: border-box;
+                width: 50%;
+                float: right;
+            }
+            
+            #coletivas h1 {
+                margin-left: 0;
+            }
+            
+            #coletivas:after{
+                content: '';
+                display: block;
+                width: 100%;
+                height: 40px;
+                clear: both;
+            }
+            
+            #coletivas ol {
+                border-left: 1px solid var(--inverse-color);
+            }
+        }
+
+    </style>
+
+    <script src="../_js/script.js"></script>
+</head>
+
+<body onresize="updateWindow()">
+    <header>
+        <h1 id="logo"><a href="home.html">Brígida Baltar</a></h1>
+        <input type="checkbox" id="open-menu">
+        <label for="open-menu" id="toggle">
+            <div id="spinner-top"></div>
+            <div id="spinner-center"></div>
+            <div id="spinner-bottom"></div>
+        </label>
+        <nav>
+            <ul>
+                <li>
+                    <a href="obras.html">Obras</a>
+                </li>
+                <li>
+                    <a href="textos-e-livros.html">Textos &#38 Livros</a>
+                </li>
+                <li>
+                    <a href="biografia.html">Biografia</a>
+                </li>
+                <li>
+                    <a>Exposições</a>
+                    <ul>
+                        <li>
+                            <a href="#individuais">Individuais</a>
+                        </li>
+                        <li>
+                            <a href="#coletivas">Coletivas</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="collapse"><img src="../_src/mail.svg" height="15" alt="Contato"></a>
+                    <address>
+                        <ul>
+                            <li>
+                                <h1>Brígida Baltar</h1>
+                                <p>baltar.brigida@gmail.com</p>
+                            </li>
+                            <li>
+                                <h1>Galeria Nara Roesler</h1>
+                                <p>info@naraoesler.art</p>
+                            </li>
+                            <li>
+                                <h2>São Paulo</h2>
+                                <p>Avenida Europa 655</p>
+                                <p>Jd. Europa 01449 001</p>
+                                <p>São Paulo SP Brasil</p>
+                                <p>55 (11) 2039 5454</p>
+                            </li>
+                            <li>
+                                <h2>Rio de Janeiro</h2>
+                                <p>Rua Redentor 241</p>
+                                <p>Ipanema 22421 030</p>
+                                <p>Rio de Janeiro RJ Brasil</p>
+                                <p>55 (21) 3591 0052</p>
+                            </li>
+                            <li>
+                                <h2>New York</h2>
+                                <p>22 East 69th Street 3R</p>
+                                <p>New York NY 10021 USA</p>
+                                <p>1 (212) 794 5038</p>
+                                <p>info@naraoesler.art</p>
+                            </li>
+                        </ul>
+                    </address>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="individuais">
+            <h1>Individuais</h1>
+            <ol>
+                <li>
+                    <time>2019</time>
+                    <div>
+                        <p><strong>Brígida Baltar – Dois videos</strong>, Galeria Gustavo Schoor, Uerj, Rio de Janeiro</p>
+                        <p><strong>Brígida Baltar: filmes</strong>, Espaço Cultural BNDES, Rio de Janeiro</p>
+                    </div>
+                </li>
+                <li>
+                    <time>2018</time>
+                    <div>
+                        <p><strong>A carne do mar</strong>, Galeria Nara Roesler, São Paulo, Brasil</p>
+                    </div>
+                </li>
+                <li>
+                    <time>2016</time>
+                    <div>
+                        <p><strong>Irmãos</strong>, Galeria Nara Roesler, Rio de Janeiro, Brasil</p>
+                    </div>
+                </li>
+                <li>
+                    <time>2012</time>
+                    <div>
+                        <p><strong>Voar</strong>, Galeria Nara Roesler, São Paulo, Brasil</p>
+                        <p><strong>SAM</strong> Art Project, Paris, França</p>
+                        <p><strong>O amor do pássaro rebelde</strong>, Cavalariças, Escola de Artes Visuais do Parque Lage – Prêmio do Governo do Rio de Janeiro; Secretaria de Estado de Cultura | Edital Artes Visuais 2011</p>
+                    </div>
+                </li>
+                <li>
+                    <time>2011</time>
+                    <div>
+                        <p><strong>O que é preciso para voar</strong>, Oi Futuro, Rio de Janeiro, Brasil</p>
+                        <p><strong>Voar</strong>, 713 Arte Contemporáneo, Buenos Aires, Argentina</p>
+                    </div>
+                </li>
+                <li>
+                    <time>2010</time>
+                    <div>
+                        <p><strong>Coletas</strong>, Galeria Massangana, Fundação Joaquim Nabuco, Recife, Brasil</p>
+                        <p><strong>Um Céu Entre Paredes</strong>, Galeria Baobá, Fundação Joaquim Nabuco, Recife, Brasil</p>
+                    </div>
+                </li>
+                <li>
+                    <time>2009</time>
+                    <div>
+                        <p>Centro Cultural Banco do Nordeste, Fortaleza, Brasil</p>
+                        <p><strong>Alguns videos</strong>, Museu Vitor Meirelles, Florianópolis, Brasil</p>
+                    </div>
+                </li>
+                <li>
+                    <time>2008</time>
+                    <div>
+                        <p><strong>Planteando Utopias</strong>, Museu de Arte Contemporáneo de Bahia Blanca, Argentina</p>
+                        <p><strong>E agora toda terra é barro</strong>, Centro Cultural Banco do Nordeste Cariri, Ceará, Brasil</p>
+                    </div>
+                </li>
+                <li>
+                    <time>2007</time>
+                    <div>
+                        <p><strong>Pó de Casa</strong>, Galeria Nara Roesler, São Paulo, Brasil</p>
+                        <p><strong>Entre Paredes</strong>, 713 Arte Contemporânea, Buenos Aires, Argentina</p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+        <section id="coletivas">
+            <h1>Coletivas</h1>
+            <ol>
+                <li>
+                    <time>2019</time>
+                    <div>
+                        <p><strong>Brígida Baltar – Dois videos</strong>, Galeria Gustavo Schoor, Uerj, Rio de Janeiro</p>
+                        <p><strong>Brígida Baltar: filmes</strong>, Espaço Cultural BNDES, Rio de Janeiro</p>
+                    </div>
+                </li>
+                <li>
+                    <time>2018</time>
+                    <div>
+                        <p><strong>A carne do mar</strong>, Galeria Nara Roesler, São Paulo, Brasil</p>
+                    </div>
+                </li>
+                <li>
+                    <time>2016</time>
+                    <div>
+                        <p><strong>Irmãos</strong>, Galeria Nara Roesler, Rio de Janeiro, Brasil</p>
+                    </div>
+                </li>
+                <li>
+                    <time>2012</time>
+                    <div>
+                        <p><strong>Voar</strong>, Galeria Nara Roesler, São Paulo, Brasil</p>
+                        <p><strong>SAM</strong> Art Project, Paris, França</p>
+                        <p><strong>O amor do pássaro rebelde</strong>, Cavalariças, Escola de Artes Visuais do Parque Lage – Prêmio do Governo do Rio de Janeiro; Secretaria de Estado de Cultura | Edital Artes Visuais 2011</p>
+                    </div>
+                </li>
+                <li>
+                    <time>2011</time>
+                    <div>
+                        <p><strong>O que é preciso para voar</strong>, Oi Futuro, Rio de Janeiro, Brasil</p>
+                        <p><strong>Voar</strong>, 713 Arte Contemporáneo, Buenos Aires, Argentina</p>
+                    </div>
+                </li>
+                <li>
+                    <time>2010</time>
+                    <div>
+                        <p><strong>Coletas</strong>, Galeria Massangana, Fundação Joaquim Nabuco, Recife, Brasil</p>
+                        <p><strong>Um Céu Entre Paredes</strong>, Galeria Baobá, Fundação Joaquim Nabuco, Recife, Brasil</p>
+                    </div>
+                </li>
+                <li>
+                    <time>2009</time>
+                    <div>
+                        <p>Centro Cultural Banco do Nordeste, Fortaleza, Brasil</p>
+                        <p><strong>Alguns videos</strong>, Museu Vitor Meirelles, Florianópolis, Brasil</p>
+                    </div>
+                </li>
+                <li>
+                    <time>2008</time>
+                    <div>
+                        <p><strong>Planteando Utopias</strong>, Museu de Arte Contemporáneo de Bahia Blanca, Argentina</p>
+                        <p><strong>E agora toda terra é barro</strong>, Centro Cultural Banco do Nordeste Cariri, Ceará, Brasil</p>
+                    </div>
+                </li>
+                <li>
+                    <time>2007</time>
+                    <div>
+                        <p><strong>Pó de Casa</strong>, Galeria Nara Roesler, São Paulo, Brasil</p>
+                        <p><strong>Entre Paredes</strong>, 713 Arte Contemporânea, Buenos Aires, Argentina</p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <small>
+            <ul>
+                <li>Desenvolvimento <a href="#">Mateus Cunha</a></li>
+                <li>Design <a href="#">Lucas Bevilaqua</a></li>
+            </ul>
+        </small>
+    </footer>
+
+    <script>
+        setPage();
+
+    </script>
+</body>
+
+</html>
